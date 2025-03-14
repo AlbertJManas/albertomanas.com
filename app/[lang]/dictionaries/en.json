@@ -1,0 +1,62 @@
+{
+  "header": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "downloadCV": "Download CV"
+  },
+  "hero": {
+    "title": "Alberto Mañas",
+    "subtitle": "Tech Lead & Senior Backend Developer",
+    "description": "Java developer with over 4 years of experience leading teams and creating scalable enterprise solutions. Specialized in microservice-based architectures and cloud-native applications.",
+    "contactButton": "Contact me",
+    "downloadCV": "Download CV"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewProject": "View project",
+    "role": "Role",
+    "year": "Year",
+    "projects": [
+      {
+        "title": "Riu Hotels & Resorts",
+        "description": "Led the technological transformation of www.riu.com, changing the look and feel by using modern architectures and advanced caching strategies",
+        "role": "Tech Lead & Senior backend developer",
+        "year": "2022 - Current",
+        "url": "https://www.riu.com/en",
+        "image": "/riu_en.png?height=400&width=600"
+      },
+      {
+        "title": "Riu Hotels & Resorts",
+        "description": "Resolution of issues in the legacy web, flows in the booking process, and data retrieval from the CMS and core.",
+        "role": "Software engineer (E-commerce)",
+        "year": "2021 - 2022",
+        "url": "https://www.riu.com/en",
+        "image": "/backend_img.jpeg?height=400&width=600"
+      },
+      {
+        "title": "Arteco",
+        "description": "Develop backend and frontend technological solutions for clients in the hospitality sector.",
+        "role": "Junior Software engineer",
+        "year": "2020",
+        "url": "https://www.arteco-consulting.com/en/",
+        "image": "/arteco.png?height=400&width=600"
+      }
+    ]
+  },
+  "about": {
+    "title": "About me",
+    "description": "I am a Java developer with over a decade of experience in enterprise application development. I specialize in microservice architectures, distributed systems, and cloud-native applications. I have led development teams in large-scale projects for sectors such as banking, telecommunications, and retail. My approach focuses on creating robust, scalable, and maintainable solutions that provide real business value.",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send message",
+    "success": "Message sent successfully!",
+    "error": "There was an error sending your message. Please try again."
+  }
+}
+

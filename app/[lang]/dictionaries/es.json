@@ -1,0 +1,62 @@
+{
+  "header": {
+    "work": "Trabajo",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "downloadCV": "Descargar CV"
+  },
+  "hero": {
+    "title": "Alberto Mañas",
+    "subtitle": "Tech Lead & Senior Backend Developer",
+    "description": "Desarrollador Java con más de 4 años de experiencia liderando equipos y creando soluciones empresariales escalables. Especializado en arquitecturas basadas en microservicios y aplicaciones cloud-native.",
+    "contactButton": "Contáctame",
+    "downloadCV": "Descargar CV"
+  },
+  "projects": {
+    "title": "Trabajos hechos",
+    "viewProject": "Ver proyecto",
+    "role": "Rol",
+    "year": "Año",
+    "projects": [
+      {
+        "title": "Riu Hotels & Resorts",
+        "description": "Liderado la transformación tecnológica de riu.com, cambio de look and feel haciendo uso de arquitecturas modernas y estratégias de cacheo avanzadas",
+        "role": "Tech Lead y Senior backend developer",
+        "year": "2022 - Actualidad",
+        "url": "https://www.riu.com/es",
+        "image": "/riu_es.png?height=400&width=600"
+      },
+      {
+        "title": "Riu Hotels & Resorts",
+        "description": "Resolución de inciencias de la web legacy, flujos en el proceso de reserva y obtención de datos del cms y core",
+        "role": "Software engineer (E-commerce)",
+        "year": "2021 - 2022",
+        "url": "https://www.riu.com/es",
+        "image": "/backend_img.jpeg?height=400&width=600"
+      },
+      {
+        "title": "Arteco",
+        "description": "Desarrollar soluciones tecnológicas backend y frontend para clientes del sector hotelero",
+        "role": "Junior Software engineer",
+        "year": "2020 - 2021",
+        "url": "https://www.arteco-consulting.com/",
+        "image": "/arteco.png?height=400&width=600"
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador Java con más de una década de experiencia en el desarrollo de aplicaciones empresariales. Me especializo en arquitecturas de microservicios, sistemas distribuidos y aplicaciones cloud-native. He liderado equipos de desarrollo en proyectos de gran escala para sectores como banca, telecomunicaciones y retail. Mi enfoque se centra en crear soluciones robustas, escalables y mantenibles que aporten valor real al negocio.",
+    "technologies": "Tecnologías"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar mensaje",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo."
+  }
+}
+
