@@ -76,7 +76,7 @@ export default function Contact({ lang, dictionary }: ContactProps) {
       } else {
         toast({ title: dictionary.error, variant: "destructive" });
       }
-    } catch (error) {
+    } catch {
       toast({ title: dictionary.error, variant: "destructive" });
     } finally {
       setIsSubmitting(false);

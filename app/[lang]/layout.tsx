@@ -19,7 +19,7 @@ export default async function RootLayout({
 }) {
   // Esperar a que los parámetros estén disponibles
   const { lang } = await params
-  const dict = await getDictionary(lang as "es" | "en")
+  await getDictionary(lang as "es" | "en")
 
   return (
     <html lang={lang} suppressHydrationWarning>

@@ -10,7 +10,7 @@ interface AboutProps {
   }
 }
 
-export default function About({ lang, dictionary }: AboutProps) {
+export default function About({ dictionary }: AboutProps) {
   // Lista de tecnologías con sus logos
   const technologies = [
     { name: "Java", logo: "/java.svg" },

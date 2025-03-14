@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, User, FileText } from "lucide-react"
+import { Github, Linkedin, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 interface HeroProps {

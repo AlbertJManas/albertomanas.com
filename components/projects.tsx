@@ -22,7 +22,7 @@ interface ProjectsProps {
   }
 }
 
-export default function Projects({ lang, dictionary }: ProjectsProps) {
+export default function Projects({ dictionary }: ProjectsProps) {
   return (
     <section id="projects" className="bg-secondary/20">
       <div className="container mx-auto px-4">

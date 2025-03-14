@@ -21,7 +21,7 @@ interface HeaderProps {
 export default function Header({ lang, dictionary }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const pathname = usePathname()
+  usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
