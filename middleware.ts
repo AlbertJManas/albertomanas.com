@@ -24,7 +24,7 @@ function getLocale(request: NextRequest) {
   try {
     const languages = new Negotiator({ headers: negotiatorHeaders }).languages()
     return matchUserLocale(languages, locales, defaultLocale)
-  } catch (error) {
+  } catch {
     return defaultLocale
   }
 }
