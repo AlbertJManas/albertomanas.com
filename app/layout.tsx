@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Alberto Mañas - Portfolio",
-  description: " Passionate about building scalable and maintainable software solutions. Specializing in microservices, cloud architectures, and modern frontend technologies.",
+  description: "Passionate about building scalable and maintainable software solutions. Specializing in microservices, cloud architectures, and modern frontend technologies.",
 };
 
 export default function RootLayout({
