@@ -54,7 +54,7 @@ export default function Hero({ lang, dictionary }: HeroProps) {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <Button variant="outline" size="icon" className="rounded-full">
+                  <Button variant="outline" size="icon" className="rounded-full" aria-label="Linkedin">
                     <Linkedin className="h-5 w-5" />
                   </Button>
                 </a>
