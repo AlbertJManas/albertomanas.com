@@ -69,7 +69,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                 {item.label}
               </Link>
             ))}
-            <Button variant="outline" size="sm" className="flex items-center gap-2" onClick={downloadCV}>
+            <Button variant="outline" size="sm" className="flex items-center gap-2" onClick={downloadCV} aria-label="Download CV">
               <FileText className="h-4 w-4" />
               {dictionary.downloadCV}
             </Button>
@@ -105,6 +105,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
               variant="outline"
               size="sm"
               className="flex items-center gap-2 w-full justify-center my-2"
+              aria-label="Download CV"
               onClick={() => {
                 downloadCV()
                 setIsMenuOpen(false)

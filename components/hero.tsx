@@ -43,13 +43,13 @@ export default function Hero({ lang, dictionary }: HeroProps) {
                 {dictionary.downloadCV}
               </Button>
               <div className="flex gap-3 mt-4 md:mt-0">
-                <a href="https://github.com/albertomanas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/albertJmanas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Button variant="outline" size="icon" className="rounded-full">
                     <Github className="h-5 w-5" />
                   </Button>
                 </a>
                 <a
-                  href="https://linkedin.com/in/albertomanas"
+                  href="https://www.linkedin.com/in/alberto-mañas-gonzalez-763162169"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
