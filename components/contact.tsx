@@ -62,7 +62,7 @@ export default function Contact({ lang, dictionary }: ContactProps) {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("https://formspree.io/f/mrbpbzja", {
+      const response = await fetch(process.env.NEXT_PUBLIC_SERVERMAIL_URL as string, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
