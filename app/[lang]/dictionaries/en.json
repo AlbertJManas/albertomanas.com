@@ -1,62 +1,360 @@
 {
+  "meta": {
+    "title": "Alberto Mañas — Software Architect",
+    "description": "Software Architect specialised in DDD, hexagonal architecture and microservices, CI/CD and Oracle Cloud (OCI). More than six years building enterprise software with Java and TypeScript."
+  },
   "header": {
-    "work": "Work",
+    "experience": "Experience",
+    "expertise": "Expertise",
     "about": "About",
     "contact": "Contact",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Switch between light and dark theme",
+    "switchLanguage": "Change language"
   },
   "hero": {
     "title": "Alberto Mañas",
-    "subtitle": "Tech Lead & Senior Backend Developer",
-    "description": "Java developer with over 4 years of experience leading teams and creating scalable enterprise solutions. Specialized in microservice-based architectures and cloud-native applications.",
+    "subtitle": "Software Architect",
+    "description": "I design and build enterprise systems with Java and TypeScript, specialising in microservice architectures with DDD and hexagonal architecture, CI/CD and deployment on Oracle Cloud (OCI).",
     "contactButton": "Contact me",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "photoAlt": "Alberto Mañas",
+    "facts": [
+      {
+        "label": "Role",
+        "value": "Software Architect"
+      },
+      {
+        "label": "Company",
+        "value": "Wireless DNA"
+      },
+      {
+        "label": "Experience",
+        "value": "Since 2020"
+      },
+      {
+        "label": "Languages",
+        "value": "ES · CA · EN"
+      }
+    ]
   },
-  "projects": {
-    "title": "Featured Projects",
-    "viewProject": "View project",
-    "role": "Role",
-    "year": "Year",
-    "projects": [
+  "experience": {
+    "title": "Experience",
+    "visit": "Visit website",
+    "roles": [
       {
-        "title": "Riu Hotels & Resorts",
-        "description": "Led the technological transformation of www.riu.com, changing the look and feel by using modern architectures and advanced caching strategies",
-        "role": "Tech Lead & Senior backend developer",
-        "year": "2022 - Current",
-        "url": "https://www.riu.com/en",
-        "image": "/riu_en.png?height=400&width=600"
+        "company": "Wireless DNA",
+        "role": "Software Architect",
+        "period": "Nov 2025 — Present",
+        "url": "https://www.wdna.com/wireless",
+        "image": "/wdna.jpg",
+        "description": "Responsible for the end-to-end architecture: Next.js and React on the front end, NestJS and Java on the back end, identity with Keycloak and content with Strapi.",
+        "highlights": [
+          "Migrated an entire legacy system to a microservice architecture.",
+          "Designed services with DDD and hexagonal architecture, applying design patterns and clean code.",
+          "Built CI/CD pipelines with GitLab CI for every service.",
+          "Configured the OCI infrastructure and moved it to highly available instances.",
+          "Observability with OpenTelemetry and SigNoz.",
+          "Agentic workflows with Claude and OpenAI, custom MCP servers and skills for the team.",
+          "Architecture documentation with Mermaid and interface design in Figma."
+        ],
+        "tags": [
+          "Java",
+          "NestJS",
+          "Next.js",
+          "React",
+          "Keycloak",
+          "Strapi",
+          "OCI",
+          "GitLab CI",
+          "OpenTelemetry",
+          "SigNoz",
+          "MCP"
+        ]
       },
       {
-        "title": "Riu Hotels & Resorts",
-        "description": "Resolution of issues in the legacy web, flows in the booking process, and data retrieval from the CMS and core.",
-        "role": "Software engineer (E-commerce)",
-        "year": "2021 - 2022",
-        "url": "https://www.riu.com/en",
-        "image": "/backend_img.jpeg?height=400&width=600"
+        "company": "Antonio De Haro",
+        "role": "Web design and development · Freelance",
+        "period": "2026",
+        "url": "https://www.antoniodharo.com/",
+        "image": "/antoniodharo.jpg",
+        "description": "End-to-end design and development of the professional website of Antonio De Haro, film composer and touring bassist, from design to production.",
+        "highlights": [
+          "Bilingual website (Spanish and English) built with Next.js and Tailwind CSS and deployed on Vercel.",
+          "SEO and performance optimisation."
+        ],
+        "tags": [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "Vercel",
+          "i18n",
+          "SEO"
+        ]
       },
       {
-        "title": "Arteco",
-        "description": "Develop backend and frontend technological solutions for clients in the hospitality sector.",
-        "role": "Junior Software engineer",
-        "year": "2020",
+        "company": "Riu Hotels & Resorts",
+        "role": "Tech Lead · Senior Backend Developer",
+        "period": "2022 — 2025",
+        "url": "https://www.riu.com/en",
+        "image": "/riu_en.jpg",
+        "description": "Led the technological transformation of riu.com: a new look and feel built on a modern architecture and advanced caching strategies.",
+        "highlights": [
+          "Designed and implemented a microservice architecture with the team.",
+          "Cut response time of the key API endpoints by 30%.",
+          "Mentored the new developers joining the team."
+        ],
+        "tags": [
+          "Java 21",
+          "Spring Boot",
+          "Hibernate",
+          "Microservices",
+          "Distributed caching",
+          "OpenShift",
+          "Grafana"
+        ]
+      },
+      {
+        "company": "Riu Hotels & Resorts",
+        "role": "Software Engineer · E-commerce",
+        "period": "2021 — 2022",
+        "url": "https://www.riu.com/en",
+        "image": "/backend_img.jpeg",
+        "description": "Fixed issues in the legacy website and the booking flow, and integrated data from the CMS and the core.",
+        "highlights": [
+          "Migrated Java 7 code to LTS versions (8, 11, 17 and 21)."
+        ],
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "REST"
+        ]
+      },
+      {
+        "company": "Arteco Consulting",
+        "role": "Junior Software Engineer",
+        "period": "2020 — 2021",
         "url": "https://www.arteco-consulting.com/en/",
-        "image": "/arteco.png?height=400&width=600"
+        "image": "/arteco.png",
+        "description": "Back-end and front-end development for hospitality clients: REST APIs with Java and Spring Boot, and database design with MongoDB and Oracle.",
+        "highlights": [],
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "MongoDB",
+          "Oracle"
+        ]
+      }
+    ]
+  },
+  "expertise": {
+    "title": "Expertise",
+    "areas": [
+      {
+        "icon": "architecture",
+        "title": "Software architecture",
+        "description": "System design with Domain-Driven Design and hexagonal architecture, applying design patterns, SOLID principles and clean code to keep code maintainable and easy to evolve. Architecture documentation with Mermaid diagrams.",
+        "tags": [
+          "DDD",
+          "Hexagonal architecture",
+          "Design patterns",
+          "Clean code",
+          "SOLID",
+          "Microservices"
+        ]
+      },
+      {
+        "icon": "devops",
+        "title": "DevOps and cloud",
+        "description": "CI/CD pipelines with GitLab CI, infrastructure configuration on Oracle Cloud (OCI) and migration to highly available instances. Observability with OpenTelemetry and SigNoz.",
+        "tags": [
+          "GitLab CI",
+          "OCI",
+          "High availability",
+          "Docker",
+          "OpenTelemetry",
+          "SigNoz"
+        ]
+      },
+      {
+        "icon": "development",
+        "title": "Back-end and front-end development",
+        "description": "Services in Java with Spring Boot and in Node.js with NestJS, front ends in Next.js and React. Centralised identity with Keycloak (SSO, OIDC) and content management with Strapi.",
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "NestJS",
+          "Next.js",
+          "React",
+          "Keycloak",
+          "Strapi"
+        ]
+      },
+      {
+        "icon": "ai",
+        "title": "AI applied to development",
+        "description": "Agentic workflows with Claude and OpenAI to automate team tasks, custom MCP servers and skills to integrate agents with our tools.",
+        "tags": [
+          "Claude",
+          "OpenAI",
+          "MCP",
+          "Agent Skills"
+        ]
       }
     ]
   },
   "about": {
     "title": "About me",
-    "description": "I am a Java developer with over 4 years of experience in enterprise application development. I specialize in microservices architectures, distributed systems, and cloud-native applications. I have led development teams on large-scale projects for the hospitality sector. My focus is on creating robust, scalable, and maintainable solutions that deliver real business value.",
+    "description": "I am a Software Architect with more than six years of experience in enterprise software development. I started as a Java backend developer, became Tech Lead at Riu Hotels & Resorts and now work as an architect at Wireless DNA. My work focuses on designing maintainable architectures based on DDD and hexagonal architecture, automating delivery with CI/CD and running reliable systems in the cloud. I also bring AI tools into the development team's workflow.",
     "technologies": "Technologies"
   },
   "contact": {
     "title": "Contact",
+    "description": "For professional proposals or collaborations, write to me through this form or on LinkedIn.",
     "name": "Name",
     "email": "Email",
     "message": "Message",
     "submit": "Send message",
-    "success": "Message sent successfully!",
-    "error": "There was an error sending your message. Please try again."
+    "sending": "Sending…",
+    "success": "Message sent. Thanks for writing.",
+    "error": "The message could not be sent. Please try again in a few minutes.",
+    "validation": {
+      "name": "Name is required",
+      "email": "Invalid email",
+      "message": "Message must be at least 10 characters"
+    }
+  },
+  "footer": {
+    "backToTop": "Back to top"
+  },
+  "cv": {
+    "title": "Alberto Mañas — Software Architect — CV",
+    "headline": "Software Architect",
+    "location": "Palma, Balearic Islands, Spain",
+    "summaryTitle": "Summary",
+    "summary": "Software Architect with more than six years of experience building enterprise systems with Java and TypeScript. Specialised in microservice architectures with DDD and hexagonal architecture, design patterns and clean code, and in DevOps: CI/CD with GitLab CI and infrastructure configuration on Oracle Cloud (OCI) with high availability. At Wireless DNA I migrated an entire legacy system to microservices; previously Tech Lead at Riu Hotels & Resorts.",
+    "experienceTitle": "Professional experience",
+    "technologies": "Technologies",
+    "skillsTitle": "Technical skills",
+    "skills": [
+      {
+        "title": "Languages",
+        "items": [
+          "Java (8, 11, 17, 21)",
+          "TypeScript",
+          "JavaScript"
+        ]
+      },
+      {
+        "title": "Architecture",
+        "items": [
+          "DDD",
+          "Hexagonal architecture",
+          "Microservices",
+          "Design patterns",
+          "Clean code",
+          "SOLID",
+          "API First (OpenAPI)",
+          "Mermaid"
+        ]
+      },
+      {
+        "title": "Back end",
+        "items": [
+          "Spring Boot",
+          "Hibernate",
+          "NestJS",
+          "Node.js",
+          "REST"
+        ]
+      },
+      {
+        "title": "Front end and design",
+        "items": [
+          "Next.js",
+          "React",
+          "Angular",
+          "Figma"
+        ]
+      },
+      {
+        "title": "DevOps and cloud",
+        "items": [
+          "CI/CD",
+          "GitLab CI",
+          "Oracle Cloud (OCI)",
+          "High availability",
+          "Docker",
+          "Kubernetes",
+          "OpenShift",
+          "AWS",
+          "Jenkins"
+        ]
+      },
+      {
+        "title": "Observability",
+        "items": [
+          "OpenTelemetry",
+          "SigNoz",
+          "Grafana"
+        ]
+      },
+      {
+        "title": "Identity and content",
+        "items": [
+          "Keycloak (SSO, OIDC)",
+          "Strapi"
+        ]
+      },
+      {
+        "title": "Data and messaging",
+        "items": [
+          "PostgreSQL",
+          "MongoDB",
+          "Oracle",
+          "Kafka",
+          "Distributed caching"
+        ]
+      },
+      {
+        "title": "Applied AI",
+        "items": [
+          "Claude",
+          "OpenAI",
+          "Custom MCP servers",
+          "Agent Skills",
+          "Agentic workflows"
+        ]
+      },
+      {
+        "title": "Methodologies",
+        "items": [
+          "Scrum",
+          "TDD",
+          "BDD"
+        ]
+      }
+    ],
+    "educationTitle": "Education",
+    "education": [
+      {
+        "title": "Data Engineering",
+        "school": "Universitat Oberta de Catalunya (UOC)",
+        "period": "2023 — In progress"
+      },
+      {
+        "title": "Higher Technical Diploma in Web Application Development (CFGS DAW), dual programme",
+        "school": "IES Francesc de Borja Moll",
+        "period": "2019 — 2021"
+      }
+    ],
+    "languagesTitle": "Languages",
+    "languages": [
+      "Spanish (native)",
+      "Catalan (native)",
+      "English (upper intermediate, B2)"
+    ]
   }
 }
-

@@ -7,26 +7,27 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 
 interface LanguageSwitcherProps {
   currentLang: string
+  label: string
 }
 
-export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps) {
+export default function LanguageSwitcher({ currentLang, label }: LanguageSwitcherProps) {
   const router = useRouter()
   const pathname = usePathname()
 
   const switchLanguage = (locale: string) => {
     if (locale === currentLang) return
 
-    // Get the path without the locale prefix
+    // Ruta sin el prefijo de idioma
     const pathWithoutLocale = pathname.replace(/^\/(es|en)/, "") || ""
 
-    // Navigate to the new locale path
+    // Navegar a la ruta del nuevo idioma
     router.push(`/${locale}${pathWithoutLocale}`)
   }
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="relative h-8 w-8">
+        <Button variant="ghost" size="icon" className="relative h-8 w-8" aria-label={label}>
           <Image
             src={currentLang === "es" ? "/es.svg" : "/gb.svg"}
             alt={currentLang === "es" ? "Español" : "English"}
@@ -39,13 +40,13 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => switchLanguage("es")} className="cursor-pointer">
           <div className="flex items-center gap-2">
-            <Image src="/es.svg" alt="Español" width={20} height={20} className="rounded-sm" />
+            <Image src="/es.svg" alt="" width={20} height={20} className="rounded-sm" />
             <span>Español</span>
           </div>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => switchLanguage("en")} className="cursor-pointer">
           <div className="flex items-center gap-2">
-            <Image src="/gb.svg" alt="English" width={20} height={20} className="rounded-sm" />
+            <Image src="/gb.svg" alt="" width={20} height={20} className="rounded-sm" />
             <span>English</span>
           </div>
         </DropdownMenuItem>
@@ -53,4 +54,3 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
     </DropdownMenu>
   )
 }
-

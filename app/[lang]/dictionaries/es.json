@@ -1,62 +1,360 @@
 {
+  "meta": {
+    "title": "Alberto Mañas — Software Architect",
+    "description": "Software Architect especializado en DDD, arquitectura hexagonal y microservicios, CI/CD y Oracle Cloud (OCI). Más de seis años desarrollando software empresarial con Java y TypeScript."
+  },
   "header": {
-    "work": "Trabajo",
+    "experience": "Experiencia",
+    "expertise": "Especialización",
     "about": "Sobre mí",
     "contact": "Contacto",
-    "downloadCV": "Descargar CV"
+    "downloadCV": "Descargar CV",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "toggleTheme": "Cambiar entre tema claro y oscuro",
+    "switchLanguage": "Cambiar idioma"
   },
   "hero": {
     "title": "Alberto Mañas",
-    "subtitle": "Tech Lead & Senior Backend Developer",
-    "description": "Desarrollador Java con más de 4 años de experiencia liderando equipos y creando soluciones empresariales escalables. Especializado en arquitecturas basadas en microservicios y aplicaciones cloud-native.",
+    "subtitle": "Software Architect",
+    "description": "Diseño y desarrollo sistemas empresariales con Java y TypeScript. Especializado en arquitecturas de microservicios con DDD y arquitectura hexagonal, CI/CD y despliegue en Oracle Cloud (OCI).",
     "contactButton": "Contáctame",
-    "downloadCV": "Descargar CV"
+    "downloadCV": "Descargar CV",
+    "photoAlt": "Alberto Mañas",
+    "facts": [
+      {
+        "label": "Puesto",
+        "value": "Software Architect"
+      },
+      {
+        "label": "Empresa",
+        "value": "Wireless DNA"
+      },
+      {
+        "label": "Experiencia",
+        "value": "Desde 2020"
+      },
+      {
+        "label": "Idiomas",
+        "value": "ES · CA · EN"
+      }
+    ]
   },
-  "projects": {
-    "title": "Trabajos hechos",
-    "viewProject": "Ver proyecto",
-    "role": "Rol",
-    "year": "Año",
-    "projects": [
+  "experience": {
+    "title": "Experiencia",
+    "visit": "Ver web",
+    "roles": [
       {
-        "title": "Riu Hotels & Resorts",
-        "description": "Liderado la transformación tecnológica de riu.com, cambio de look and feel haciendo uso de arquitecturas modernas y estratégias de cacheo avanzadas",
-        "role": "Tech Lead y Senior backend developer",
-        "year": "2022 - Actualidad",
-        "url": "https://www.riu.com/es",
-        "image": "/riu_es.png?height=400&width=600"
+        "company": "Wireless DNA",
+        "role": "Software Architect",
+        "period": "Nov 2025 — Actualidad",
+        "url": "https://www.wdna.com/wireless",
+        "image": "/wdna.jpg",
+        "description": "Responsable de la arquitectura de extremo a extremo: frontal en Next.js y React, backend en NestJS y Java, identidad con Keycloak y contenidos con Strapi.",
+        "highlights": [
+          "Migración de un sistema legacy completo a una arquitectura de microservicios.",
+          "Diseño de servicios con DDD y arquitectura hexagonal, aplicando patrones de diseño y clean code.",
+          "Pipelines de CI/CD con GitLab CI para todos los servicios.",
+          "Configuración de la infraestructura en OCI y migración a instancias con alta disponibilidad.",
+          "Observabilidad con OpenTelemetry y SigNoz.",
+          "Workflows agénticos con Claude y OpenAI, servidores MCP propios y skills para el equipo.",
+          "Documentación de arquitectura con Mermaid y diseño de interfaces en Figma."
+        ],
+        "tags": [
+          "Java",
+          "NestJS",
+          "Next.js",
+          "React",
+          "Keycloak",
+          "Strapi",
+          "OCI",
+          "GitLab CI",
+          "OpenTelemetry",
+          "SigNoz",
+          "MCP"
+        ]
       },
       {
-        "title": "Riu Hotels & Resorts",
-        "description": "Resolución de inciencias de la web legacy, flujos en el proceso de reserva y obtención de datos del cms y core",
-        "role": "Software engineer (E-commerce)",
-        "year": "2021 - 2022",
-        "url": "https://www.riu.com/es",
-        "image": "/backend_img.jpeg?height=400&width=600"
+        "company": "Antonio De Haro",
+        "role": "Diseño y desarrollo web · Freelance",
+        "period": "2026",
+        "url": "https://www.antoniodharo.com/",
+        "image": "/antoniodharo.jpg",
+        "description": "Diseño y desarrollo completo de la web profesional de Antonio De Haro, compositor de cine y bajista de gira, desde el diseño hasta la puesta en producción.",
+        "highlights": [
+          "Web bilingüe (español e inglés) desarrollada con Next.js y Tailwind CSS y desplegada en Vercel.",
+          "Optimización SEO y de rendimiento."
+        ],
+        "tags": [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "Vercel",
+          "i18n",
+          "SEO"
+        ]
       },
       {
-        "title": "Arteco",
-        "description": "Desarrollar soluciones tecnológicas backend y frontend para clientes del sector hotelero",
-        "role": "Junior Software engineer",
-        "year": "2020 - 2021",
+        "company": "Riu Hotels & Resorts",
+        "role": "Tech Lead · Senior Backend Developer",
+        "period": "2022 — 2025",
+        "url": "https://www.riu.com/es",
+        "image": "/riu_es.jpg",
+        "description": "Lideré la transformación tecnológica de riu.com: nuevo look and feel sobre una arquitectura moderna y estrategias de caché avanzadas.",
+        "highlights": [
+          "Diseño e implementación de una arquitectura de microservicios junto al equipo.",
+          "Reducción del 30 % en el tiempo de respuesta de los endpoints clave de la API.",
+          "Mentoría de los nuevos desarrolladores del equipo."
+        ],
+        "tags": [
+          "Java 21",
+          "Spring Boot",
+          "Hibernate",
+          "Microservicios",
+          "Cachés distribuidas",
+          "OpenShift",
+          "Grafana"
+        ]
+      },
+      {
+        "company": "Riu Hotels & Resorts",
+        "role": "Software Engineer · E-commerce",
+        "period": "2021 — 2022",
+        "url": "https://www.riu.com/es",
+        "image": "/backend_img.jpeg",
+        "description": "Resolución de incidencias de la web legacy y del flujo de reserva, e integración de datos del CMS y del core.",
+        "highlights": [
+          "Migración de código Java 7 a versiones LTS (8, 11, 17 y 21)."
+        ],
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "REST"
+        ]
+      },
+      {
+        "company": "Arteco Consulting",
+        "role": "Junior Software Engineer",
+        "period": "2020 — 2021",
         "url": "https://www.arteco-consulting.com/",
-        "image": "/arteco.png?height=400&width=600"
+        "image": "/arteco.png",
+        "description": "Desarrollo backend y frontend para clientes del sector hotelero: APIs REST con Java y Spring Boot, y diseño de bases de datos con MongoDB y Oracle.",
+        "highlights": [],
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "MongoDB",
+          "Oracle"
+        ]
+      }
+    ]
+  },
+  "expertise": {
+    "title": "Especialización",
+    "areas": [
+      {
+        "icon": "architecture",
+        "title": "Arquitectura de software",
+        "description": "Diseño de sistemas con Domain-Driven Design y arquitectura hexagonal, aplicando patrones de diseño, principios SOLID y clean code para obtener código mantenible y fácil de evolucionar. Documentación de la arquitectura con diagramas en Mermaid.",
+        "tags": [
+          "DDD",
+          "Arquitectura hexagonal",
+          "Patrones de diseño",
+          "Clean code",
+          "SOLID",
+          "Microservicios"
+        ]
+      },
+      {
+        "icon": "devops",
+        "title": "DevOps y cloud",
+        "description": "Pipelines de CI/CD con GitLab CI, configuración de infraestructura en Oracle Cloud (OCI) y migración a instancias con alta disponibilidad. Observabilidad con OpenTelemetry y SigNoz.",
+        "tags": [
+          "GitLab CI",
+          "OCI",
+          "Alta disponibilidad",
+          "Docker",
+          "OpenTelemetry",
+          "SigNoz"
+        ]
+      },
+      {
+        "icon": "development",
+        "title": "Desarrollo backend y frontend",
+        "description": "Servicios en Java con Spring Boot y en Node.js con NestJS, frontales en Next.js y React. Identidad centralizada con Keycloak (SSO, OIDC) y gestión de contenidos con Strapi.",
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "NestJS",
+          "Next.js",
+          "React",
+          "Keycloak",
+          "Strapi"
+        ]
+      },
+      {
+        "icon": "ai",
+        "title": "IA aplicada al desarrollo",
+        "description": "Workflows agénticos con Claude y OpenAI para automatizar tareas del equipo, desarrollo de servidores MCP propios y uso de skills para integrar los agentes con nuestras herramientas.",
+        "tags": [
+          "Claude",
+          "OpenAI",
+          "MCP",
+          "Agent Skills"
+        ]
       }
     ]
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Soy un desarrollador Java con más de 4 años de experiencia en el desarrollo de aplicaciones empresariales. Me especializo en arquitecturas de microservicios, sistemas distribuidos y aplicaciones cloud-native. He liderado equipos de desarrollo en proyectos de gran escala para el sector hotelero. Mi enfoque se centra en crear soluciones robustas, escalables y mantenibles que aporten valor real al negocio.",
+    "description": "Soy Software Architect con más de seis años de experiencia en el desarrollo de software empresarial. Empecé como desarrollador backend en Java, fui Tech Lead en Riu Hotels & Resorts y actualmente trabajo como arquitecto en Wireless DNA. Mi trabajo se centra en diseñar arquitecturas mantenibles basadas en DDD y arquitectura hexagonal, automatizar la entrega con CI/CD y operar sistemas fiables en la nube. Además, incorporo herramientas de IA al flujo de trabajo del equipo de desarrollo.",
     "technologies": "Tecnologías"
   },
   "contact": {
     "title": "Contacto",
+    "description": "Para propuestas profesionales o colaboraciones, escríbeme a través de este formulario o por LinkedIn.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "message": "Mensaje",
     "submit": "Enviar mensaje",
-    "success": "¡Mensaje enviado con éxito!",
-    "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo."
+    "sending": "Enviando…",
+    "success": "Mensaje enviado. Gracias por escribir.",
+    "error": "No se ha podido enviar el mensaje. Inténtalo de nuevo en unos minutos.",
+    "validation": {
+      "name": "El nombre es requerido",
+      "email": "Email inválido",
+      "message": "El mensaje debe tener al menos 10 caracteres"
+    }
+  },
+  "footer": {
+    "backToTop": "Volver arriba"
+  },
+  "cv": {
+    "title": "Alberto Mañas — Software Architect — CV",
+    "headline": "Software Architect",
+    "location": "Palma, Illes Balears",
+    "summaryTitle": "Perfil",
+    "summary": "Software Architect con más de seis años de experiencia en sistemas empresariales con Java y TypeScript. Especializado en arquitecturas de microservicios con DDD y arquitectura hexagonal, patrones de diseño y clean code, y en DevOps: CI/CD con GitLab CI y configuración de infraestructura en Oracle Cloud (OCI) con alta disponibilidad. En Wireless DNA he migrado un sistema legacy completo a microservicios; anteriormente, Tech Lead en Riu Hotels & Resorts.",
+    "experienceTitle": "Experiencia profesional",
+    "technologies": "Tecnologías",
+    "skillsTitle": "Habilidades técnicas",
+    "skills": [
+      {
+        "title": "Lenguajes",
+        "items": [
+          "Java (8, 11, 17, 21)",
+          "TypeScript",
+          "JavaScript"
+        ]
+      },
+      {
+        "title": "Arquitectura",
+        "items": [
+          "DDD",
+          "Arquitectura hexagonal",
+          "Microservicios",
+          "Patrones de diseño",
+          "Clean code",
+          "SOLID",
+          "API First (OpenAPI)",
+          "Mermaid"
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": [
+          "Spring Boot",
+          "Hibernate",
+          "NestJS",
+          "Node.js",
+          "REST"
+        ]
+      },
+      {
+        "title": "Frontend y diseño",
+        "items": [
+          "Next.js",
+          "React",
+          "Angular",
+          "Figma"
+        ]
+      },
+      {
+        "title": "DevOps y cloud",
+        "items": [
+          "CI/CD",
+          "GitLab CI",
+          "Oracle Cloud (OCI)",
+          "Alta disponibilidad",
+          "Docker",
+          "Kubernetes",
+          "OpenShift",
+          "AWS",
+          "Jenkins"
+        ]
+      },
+      {
+        "title": "Observabilidad",
+        "items": [
+          "OpenTelemetry",
+          "SigNoz",
+          "Grafana"
+        ]
+      },
+      {
+        "title": "Identidad y contenidos",
+        "items": [
+          "Keycloak (SSO, OIDC)",
+          "Strapi"
+        ]
+      },
+      {
+        "title": "Datos y mensajería",
+        "items": [
+          "PostgreSQL",
+          "MongoDB",
+          "Oracle",
+          "Kafka",
+          "Cachés distribuidas"
+        ]
+      },
+      {
+        "title": "IA aplicada",
+        "items": [
+          "Claude",
+          "OpenAI",
+          "Servidores MCP propios",
+          "Agent Skills",
+          "Workflows agénticos"
+        ]
+      },
+      {
+        "title": "Metodologías",
+        "items": [
+          "Scrum",
+          "TDD",
+          "BDD"
+        ]
+      }
+    ],
+    "educationTitle": "Formación",
+    "education": [
+      {
+        "title": "Ingeniería de Datos",
+        "school": "Universitat Oberta de Catalunya (UOC)",
+        "period": "2023 — En curso"
+      },
+      {
+        "title": "CFGS Desarrollo de Aplicaciones Web (DAW), modalidad dual",
+        "school": "IES Francesc de Borja Moll",
+        "period": "2019 — 2021"
+      }
+    ],
+    "languagesTitle": "Idiomas",
+    "languages": [
+      "Español (nativo)",
+      "Catalán (nativo)",
+      "Inglés (intermedio alto, B2)"
+    ]
   }
 }
-
