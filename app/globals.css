@@ -59,5 +59,12 @@
   section {
     @apply py-16 md:py-24;
   }
+  section[id] {
+    @apply scroll-mt-12;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
 }
-

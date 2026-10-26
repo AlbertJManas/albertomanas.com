@@ -2,54 +2,45 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { Menu, X, FileText } from "lucide-react"
+import type { Dictionary } from "@/app/[lang]/dictionaries"
 import { Button } from "@/components/ui/button"
+import { cvPath } from "@/lib/site"
 import LanguageSwitcher from "./language-switcher"
 import ThemeToggle from "./theme-toggle"
 
 interface HeaderProps {
   lang: string
-  dictionary: {
-    work: string
-    about: string
-    contact: string
-    downloadCV: string
-  }
+  dictionary: Dictionary["header"]
 }
 
 export default function Header({ lang, dictionary }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
     }
 
-    window.addEventListener("scroll", handleScroll)
+    handleScroll()
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   const navItems = [
-    { href: `/${lang}#projects`, label: dictionary.work },
-    { href: `/${lang}#about`, label: dictionary.about },
-    { href: `/${lang}#contact`, label: dictionary.contact },
+    { href: "#experience", label: dictionary.experience },
+    { href: "#expertise", label: dictionary.expertise },
+    { href: "#about", label: dictionary.about },
+    { href: "#contact", label: dictionary.contact },
   ]
-
-  // Función para descargar el CV según el idioma
-  const downloadCV = () => {
-    const cvPath = lang === "es" ? "/cv-alberto-manas-es.pdf" : "/cv-alberto-manas-en.pdf"
-    window.open(cvPath, "_blank")
-  }
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled || isMenuOpen ? "bg-background/80 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-4">
@@ -58,64 +49,62 @@ export default function Header({ lang, dictionary }: HeaderProps) {
             Alberto Mañas
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Navegación de escritorio */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-foreground/80 hover:text-foreground transition-colors"
-              >
+              <a key={item.href} href={item.href} className="text-foreground/80 hover:text-foreground transition-colors">
                 {item.label}
-              </Link>
+              </a>
             ))}
-            <Button variant="outline" size="sm" className="flex items-center gap-2" onClick={downloadCV} aria-label="Download CV">
-              <FileText className="h-4 w-4" />
-              {dictionary.downloadCV}
+            <Button asChild variant="outline" size="sm" className="flex items-center gap-2">
+              <a href={cvPath(lang)} target="_blank" rel="noopener noreferrer">
+                <FileText className="h-4 w-4" />
+                {dictionary.downloadCV}
+              </a>
             </Button>
             <div className="flex items-center space-x-2">
-              <LanguageSwitcher currentLang={lang} />
-              <ThemeToggle />
+              <LanguageSwitcher currentLang={lang} label={dictionary.switchLanguage} />
+              <ThemeToggle label={dictionary.toggleTheme} />
             </div>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Botón del menú móvil */}
           <div className="flex items-center space-x-2 md:hidden">
-            <ThemeToggle />
-            <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
+            <ThemeToggle label={dictionary.toggleTheme} />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleMenu}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
+              aria-label={isMenuOpen ? dictionary.closeMenu : dictionary.openMenu}
+            >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Navegación móvil */}
         {isMenuOpen && (
-          <nav className="md:hidden pt-4 pb-2 space-y-4">
+          <nav id="mobile-menu" className="md:hidden pt-4 pb-2 space-y-4">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
-            <Button
-              variant="outline"
-              size="sm"
-              className="flex items-center gap-2 w-full justify-center my-2"
-              aria-label="Download CV"
-              onClick={() => {
-                downloadCV()
-                setIsMenuOpen(false)
-              }}
-            >
-              <FileText className="h-4 w-4" />
-              {dictionary.downloadCV}
+            <Button asChild variant="outline" size="sm" className="flex items-center gap-2 w-full justify-center my-2">
+              <a href={cvPath(lang)} target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                <FileText className="h-4 w-4" />
+                {dictionary.downloadCV}
+              </a>
             </Button>
             <div className="py-2">
-              <LanguageSwitcher currentLang={lang} />
+              <LanguageSwitcher currentLang={lang} label={dictionary.switchLanguage} />
             </div>
           </nav>
         )}
@@ -123,4 +112,3 @@ export default function Header({ lang, dictionary }: HeaderProps) {
     </header>
   )
 }
-
